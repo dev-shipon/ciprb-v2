@@ -65,6 +65,16 @@
       overflow-x: hidden;
     }
 
+    .no-scrollbar::-webkit-scrollbar,
+    .scrollbar-none::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar,
+    .scrollbar-none {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
     /* Ambient organic background accents inspired by Hopeful charity aesthetic */
     .bg-charity-wash {
       background-color: #FAF9F6;
@@ -1943,18 +1953,18 @@
           </div>
         </div>
         <!-- Interactive Category Filter Tabs -->
-        <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-6 mb-4 reveal-on-scroll is-visible">
+        <div class="flex items-center gap-2.5 overflow-x-auto no-scrollbar pb-4 mb-6 pt-1 sm:flex-wrap -mx-4 px-4 sm:mx-0 sm:px-0 touch-pan-x reveal-on-scroll is-visible">
           <button
-            class="partner-filter-btn px-4 py-2 rounded-full text-xs font-bold border transition-all duration-200 bg-brand-navy text-white border-brand-navy shadow-sm"
+            class="partner-filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-extrabold border whitespace-nowrap flex-shrink-0 transition-all duration-300 shadow-sm bg-brand-navy text-white border-brand-navy hover:shadow-md"
             data-category="all">All Partners (18)</button>
           <button
-            class="partner-filter-btn px-4 py-2 rounded-full text-xs font-bold border transition-all duration-200 bg-white text-slate-700 border-slate-200 hover:border-brand-navy hover:text-brand-navy"
+            class="partner-filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-extrabold border whitespace-nowrap flex-shrink-0 transition-all duration-300 shadow-sm bg-white text-slate-700 border-slate-200 hover:border-brand-navy hover:text-brand-navy hover:bg-slate-50"
             data-category="gov">Government &amp; Multilateral</button>
           <button
-            class="partner-filter-btn px-4 py-2 rounded-full text-xs font-bold border transition-all duration-200 bg-white text-slate-700 border-slate-200 hover:border-brand-navy hover:text-brand-navy"
+            class="partner-filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-extrabold border whitespace-nowrap flex-shrink-0 transition-all duration-300 shadow-sm bg-white text-slate-700 border-slate-200 hover:border-brand-navy hover:text-brand-navy hover:bg-slate-50"
             data-category="academic">Academic &amp; Research</button>
           <button
-            class="partner-filter-btn px-4 py-2 rounded-full text-xs font-bold border transition-all duration-200 bg-white text-slate-700 border-slate-200 hover:border-brand-navy hover:text-brand-navy"
+            class="partner-filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-extrabold border whitespace-nowrap flex-shrink-0 transition-all duration-300 shadow-sm bg-white text-slate-700 border-slate-200 hover:border-brand-navy hover:text-brand-navy hover:bg-slate-50"
             data-category="ngo">International NGOs</button>
         </div>
         <!-- 18 Partner Logo Grid with Enhanced Cards -->
