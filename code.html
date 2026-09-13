@@ -504,28 +504,33 @@
       </div>
       <div class="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10" id="hero-slider-scope">
         <!-- Carousel Navigation Controls & Progress Top Bar -->
-        <div class="flex items-center justify-between mb-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
           <div
-            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-100/90 text-brand-coral font-extrabold text-xs tracking-wide border border-orange-200 shadow-sm">
-            <i class="fa-solid fa-star text-amber-500 text-xs"></i>
-            <span class="">19+ Years Pioneering Child &amp; Community Safety across Bangladesh</span>
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-100/90 text-brand-coral font-extrabold text-[11px] sm:text-xs tracking-wide border border-orange-200 shadow-sm self-start sm:self-auto max-w-full">
+            <i class="fa-solid fa-star text-amber-500 text-xs shrink-0"></i>
+            <span class="truncate sm:whitespace-normal">19+ Years Pioneering Child &amp; Community Safety across Bangladesh</span>
           </div>
-          <div class="flex items-center gap-2">
+          <div class="flex items-center justify-between sm:justify-end gap-2 w-full sm:w-auto">
             <div
-              class="flex items-center gap-1 text-xs font-bold text-slate-500 mr-2 bg-white px-2.5 py-1 rounded-full border border-slate-200 shadow-sm">
+              class="flex items-center gap-1 text-xs font-bold text-slate-500 bg-white px-3 py-1.5 rounded-full border border-slate-200 shadow-sm">
               <span class="text-brand-coral font-extrabold" id="hero-current-num">06</span><span
-                class="text-slate-400">/</span><span class="">08</span></div><button aria-label="Previous slide"
-              class="w-9 h-9 rounded-full bg-white border border-slate-200 shadow-sm hover:border-brand-coral hover:text-brand-coral text-slate-700 flex items-center justify-center transition-all duration-200 cursor-pointer"
-              id="hero-prev-btn"><i class="fa-solid fa-arrow-left text-xs"></i></button><button aria-label="Next slide"
-              class="w-9 h-9 rounded-full bg-white border border-slate-200 shadow-sm hover:border-brand-coral hover:text-brand-coral text-slate-700 flex items-center justify-center transition-all duration-200 cursor-pointer"
-              id="hero-next-btn"><i class="fa-solid fa-arrow-right text-xs"></i></button>
+                class="text-slate-400">/</span><span class="">08</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <button aria-label="Previous slide"
+                class="w-9 h-9 rounded-full bg-white border border-slate-200 shadow-sm hover:border-brand-coral hover:text-brand-coral text-slate-700 flex items-center justify-center transition-all duration-200 cursor-pointer"
+                id="hero-prev-btn"><i class="fa-solid fa-arrow-left text-xs"></i></button>
+              <button aria-label="Next slide"
+                class="w-9 h-9 rounded-full bg-white border border-slate-200 shadow-sm hover:border-brand-coral hover:text-brand-coral text-slate-700 flex items-center justify-center transition-all duration-200 cursor-pointer"
+                id="hero-next-btn"><i class="fa-solid fa-arrow-right text-xs"></i></button>
+            </div>
           </div>
         </div>
         <!-- Slide Views Wrapper -->
         <div class="relative min-h-[500px] lg:min-h-[480px] overflow-hidden rounded-3xl" id="hero-slides-wrapper">
           <!-- Slide 0: Child Safety -->
           <div class="hero-slide transition-opacity duration-700 ease-in-out hidden" data-index="0" style="opacity: 0;">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center py-2">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center px-3 sm:px-6 py-4 sm:py-6">
               <div class="lg:col-span-6 space-y-5">
                 <h1
                   class="slide-title text-3xl sm:text-4xl lg:text-[40px] xl:text-[46px] font-black tracking-tight text-slate-900 leading-[1.38]">
@@ -536,8 +541,8 @@
                   Equipping rural schoolchildren with cardiopulmonary resuscitation and immediate community first
                   responder skills, turning youth into front-line lifesavers during aquatic emergencies.
                 </p>
-                <div class="slide-ctas flex flex-wrap items-center gap-4 pt-1">
-                  <a class="btn-sheen inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-extrabold text-white bg-orange-600 hover:bg-orange-700 shadow-xl shadow-orange-600/30 hover:scale-105 transition-all"
+                <div class="slide-ctas flex flex-col sm:flex-row sm:items-center gap-3 pt-1">
+                  <a class="btn-sheen inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-extrabold text-white bg-orange-600 hover:bg-orange-700 shadow-xl shadow-orange-600/30 hover:scale-105 transition-all w-full sm:w-auto"
                     href="#innovations">
                     <span class="">Explore CPR Training</span>
                     <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
@@ -548,20 +553,20 @@
                     <span class="">Watch Demonstration</span>
                   </a>
                 </div>
-                <div class="slide-stats pt-4 border-t border-slate-300 grid grid-cols-3 gap-3.5 max-w-lg">
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-slate-200 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-slate-900">15,000+</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-slate-600 mt-1">Youth Trained
+                <div class="slide-stats pt-4 border-t border-slate-300 grid grid-cols-3 gap-1.5 sm:gap-3.5 max-w-lg">
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-slate-200 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-slate-900">15,000+</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-slate-600 mt-1">Youth Trained
                     </div>
                   </div>
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-orange-300 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-orange-600">98.4%</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-orange-700 mt-1">Pass Rate
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-orange-300 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-orange-600">98.4%</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-orange-700 mt-1">Pass Rate
                     </div>
                   </div>
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-slate-200 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-slate-900">National</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-slate-600 mt-1">Scale Rollout
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-slate-200 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-slate-900">National</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-slate-600 mt-1">Scale Rollout
                     </div>
                   </div>
                 </div>
@@ -589,7 +594,7 @@
           </div>
           <!-- Slide 1: Drowning Prevention -->
           <div class="hero-slide transition-opacity duration-700 ease-in-out hidden" data-index="1" style="opacity: 0;">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center py-2">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center px-3 sm:px-6 py-4 sm:py-6">
               <div class="lg:col-span-6 space-y-5">
                 <h1
                   class="slide-title text-3xl sm:text-4xl lg:text-[40px] xl:text-[46px] font-black tracking-tight text-slate-900 leading-[1.38]">
@@ -600,8 +605,8 @@
                   Bangladesh faces a preventable crisis of child drowning. CIPRB's scientific protocols have established
                   SwimSafe as the globally accepted gold standard for aquatic survival in LMICs.
                 </p>
-                <div class="slide-ctas flex flex-wrap items-center gap-4 pt-1">
-                  <a class="btn-sheen inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-extrabold text-white bg-sky-700 hover:bg-sky-800 shadow-xl shadow-sky-700/30 hover:scale-105 transition-all"
+                <div class="slide-ctas flex flex-col sm:flex-row sm:items-center gap-3 pt-1">
+                  <a class="btn-sheen inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-extrabold text-white bg-sky-700 hover:bg-sky-800 shadow-xl shadow-sky-700/30 hover:scale-105 transition-all w-full sm:w-auto"
                     href="#innovations">
                     <span class="">SwimSafe Protocol</span>
                     <i class="fa-solid fa-person-swimming ml-2 text-xs"></i>
@@ -612,19 +617,19 @@
                     <span class="">Research Papers</span>
                   </a>
                 </div>
-                <div class="slide-stats pt-4 border-t border-slate-300 grid grid-cols-3 gap-3.5 max-w-lg">
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-slate-200 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-slate-900">700,000+</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-slate-600 mt-1">Graduates</div>
+                <div class="slide-stats pt-4 border-t border-slate-300 grid grid-cols-3 gap-1.5 sm:gap-3.5 max-w-lg">
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-slate-200 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-slate-900">700,000+</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-slate-600 mt-1">Graduates</div>
                   </div>
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-sky-300 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-sky-700">80%+</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-sky-800 mt-1">Risk Reduction
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-sky-300 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-sky-700">80%+</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-sky-800 mt-1">Risk Reduction
                     </div>
                   </div>
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-slate-200 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-slate-900">WHO</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-slate-600 mt-1">Recommended
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-slate-200 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-slate-900">WHO</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-slate-600 mt-1">Recommended
                     </div>
                   </div>
                 </div>
@@ -651,7 +656,7 @@
           </div>
           <!-- Slide 2: Water Safety -->
           <div class="hero-slide transition-opacity duration-700 ease-in-out hidden" data-index="2" style="opacity: 0;">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center py-2">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center px-3 sm:px-6 py-4 sm:py-6">
               <div class="lg:col-span-6 space-y-5">
                 <h1
                   class="slide-title text-3xl sm:text-4xl lg:text-[40px] xl:text-[46px] font-black tracking-tight text-slate-900 leading-[1.38]">
@@ -662,8 +667,8 @@
                   Deploying volunteer community lifeguards along treacherous coastal areas of Cox's Bazar and
                   flood-prone unions with specialized survival flotation techniques.
                 </p>
-                <div class="slide-ctas flex flex-wrap items-center gap-4 pt-1">
-                  <a class="btn-sheen inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-extrabold text-white bg-teal-700 hover:bg-teal-800 shadow-xl shadow-teal-700/30 hover:scale-105 transition-all"
+                <div class="slide-ctas flex flex-col sm:flex-row sm:items-center gap-3 pt-1">
+                  <a class="btn-sheen inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-extrabold text-white bg-teal-700 hover:bg-teal-800 shadow-xl shadow-teal-700/30 hover:scale-105 transition-all w-full sm:w-auto"
                     href="#innovations">
                     <span class="">Explore SeaSafe</span>
                     <i class="fa-solid fa-life-ring ml-2 text-xs"></i>
@@ -674,20 +679,20 @@
                     <span class="">Partner With Us</span>
                   </a>
                 </div>
-                <div class="slide-stats pt-4 border-t border-slate-300 grid grid-cols-3 gap-3.5 max-w-lg">
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-slate-200 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-slate-900">250+</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-slate-600 mt-1">Lifeguards
+                <div class="slide-stats pt-4 border-t border-slate-300 grid grid-cols-3 gap-1.5 sm:gap-3.5 max-w-lg">
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-slate-200 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-slate-900">250+</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-slate-600 mt-1">Lifeguards
                     </div>
                   </div>
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-teal-300 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-teal-700">1,400+</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-teal-800 mt-1">Rescues Done
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-teal-300 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-teal-700">1,400+</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-teal-800 mt-1">Rescues Done
                     </div>
                   </div>
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-slate-200 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-slate-900">120 km</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-slate-600 mt-1">Coastline</div>
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-slate-200 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-slate-900">120 km</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-slate-600 mt-1">Coastline</div>
                   </div>
                 </div>
               </div>
@@ -713,7 +718,7 @@
           </div>
           <!-- Slide 3: SwimSafe Programme -->
           <div class="hero-slide transition-opacity duration-700 ease-in-out hidden" data-index="3" style="opacity: 0;">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center py-2">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center px-3 sm:px-6 py-4 sm:py-6">
               <div class="lg:col-span-6 space-y-5">
                 <h1
                   class="slide-title text-3xl sm:text-4xl lg:text-[40px] xl:text-[46px] font-black tracking-tight text-slate-900 leading-[1.38]">
@@ -724,8 +729,8 @@
                   Transforming natural ponds into safe teaching enclosures with bamboo structures, graduating over
                   700,000 rural children with life-long swim and rescue techniques.
                 </p>
-                <div class="slide-ctas flex flex-wrap items-center gap-4 pt-1">
-                  <a class="btn-sheen inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-extrabold text-white bg-blue-700 hover:bg-blue-800 shadow-xl shadow-blue-700/30 hover:scale-105 transition-all"
+                <div class="slide-ctas flex flex-col sm:flex-row sm:items-center gap-3 pt-1">
+                  <a class="btn-sheen inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-extrabold text-white bg-blue-700 hover:bg-blue-800 shadow-xl shadow-blue-700/30 hover:scale-105 transition-all w-full sm:w-auto"
                     href="#innovations">
                     <span class="">Curriculum Details</span>
                     <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
@@ -736,20 +741,20 @@
                     <span class="">Pond Enclosures</span>
                   </a>
                 </div>
-                <div class="slide-stats pt-4 border-t border-slate-300 grid grid-cols-3 gap-3.5 max-w-lg">
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-slate-200 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-slate-900">21 Lesson</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-slate-600 mt-1">Structured
+                <div class="slide-stats pt-4 border-t border-slate-300 grid grid-cols-3 gap-1.5 sm:gap-3.5 max-w-lg">
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-slate-200 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-slate-900">21 Lesson</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-slate-600 mt-1">Structured
                       Program</div>
                   </div>
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-blue-300 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-blue-700">4-12 yrs</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-blue-800 mt-1">Target Cohort
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-blue-300 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-blue-700">4-12 yrs</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-blue-800 mt-1">Target Cohort
                     </div>
                   </div>
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-slate-200 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-slate-900">50+</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-slate-600 mt-1">Districts</div>
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-slate-200 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-slate-900">50+</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-slate-600 mt-1">Districts</div>
                   </div>
                 </div>
               </div>
@@ -776,7 +781,7 @@
           </div>
           <!-- Slide 4: Life-Saving Skills -->
           <div class="hero-slide transition-opacity duration-700 ease-in-out hidden" data-index="4" style="opacity: 0;">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center py-2">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center px-3 sm:px-6 py-4 sm:py-6">
               <div class="lg:col-span-6 space-y-5">
                 <h1
                   class="slide-title text-3xl sm:text-4xl lg:text-[40px] xl:text-[46px] font-black tracking-tight text-slate-900 leading-[1.38]">
@@ -787,8 +792,8 @@
                   When an aquatic emergency occurs, immediate bystander response dictates survival. CIPRB equips whole
                   villages with practical mouth-to-mouth resuscitation and recovery position skills.
                 </p>
-                <div class="slide-ctas flex flex-wrap items-center gap-4 pt-1">
-                  <a class="btn-sheen inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-extrabold text-white bg-rose-700 hover:bg-rose-800 shadow-xl shadow-rose-700/30 hover:scale-105 transition-all"
+                <div class="slide-ctas flex flex-col sm:flex-row sm:items-center gap-3 pt-1">
+                  <a class="btn-sheen inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-extrabold text-white bg-rose-700 hover:bg-rose-800 shadow-xl shadow-rose-700/30 hover:scale-105 transition-all w-full sm:w-auto"
                     href="#media">
                     <span class="">Community Workshops</span>
                     <i class="fa-solid fa-handshake ml-2 text-xs"></i>
@@ -799,20 +804,20 @@
                     <span class="">Volunteer</span>
                   </a>
                 </div>
-                <div class="slide-stats pt-4 border-t border-slate-300 grid grid-cols-3 gap-3.5 max-w-lg">
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-slate-200 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-slate-900">3,500+</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-slate-600 mt-1">Workshops Held
+                <div class="slide-stats pt-4 border-t border-slate-300 grid grid-cols-3 gap-1.5 sm:gap-3.5 max-w-lg">
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-slate-200 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-slate-900">3,500+</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-slate-600 mt-1">Workshops Held
                     </div>
                   </div>
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-rose-300 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-rose-700">45,000+</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-rose-800 mt-1">Villagers
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-rose-300 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-rose-700">45,000+</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-rose-800 mt-1">Villagers
                       Certified</div>
                   </div>
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-slate-200 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-slate-900">100%</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-slate-600 mt-1">Hands-On
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-slate-200 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-slate-900">100%</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-slate-600 mt-1">Hands-On
                       Practice</div>
                   </div>
                 </div>
@@ -840,7 +845,7 @@
           <!-- Slide 5: Child Development (Anchal) -->
           <div class="hero-slide transition-opacity duration-700 ease-in-out active-slide" data-index="5"
             style="opacity: 1;">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center py-2">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center px-3 sm:px-6 py-4 sm:py-6">
               <div class="lg:col-span-6 space-y-5">
                 <h1
                   class="slide-title text-3xl sm:text-4xl lg:text-[40px] xl:text-[46px] font-black tracking-tight text-slate-900 leading-[1.38]">
@@ -851,8 +856,8 @@
                   Providing safe, supervised spaces during peak drowning hours (9am-1pm) for toddlers aged 1-5, combined
                   with early childhood education and maternal community empowerment.
                 </p>
-                <div class="slide-ctas flex flex-wrap items-center gap-4 pt-1">
-                  <a class="btn-sheen inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-extrabold text-white bg-emerald-700 hover:bg-emerald-800 shadow-xl shadow-emerald-700/30 hover:scale-105 transition-all"
+                <div class="slide-ctas flex flex-col sm:flex-row sm:items-center gap-3 pt-1">
+                  <a class="btn-sheen inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-extrabold text-white bg-emerald-700 hover:bg-emerald-800 shadow-xl shadow-emerald-700/30 hover:scale-105 transition-all w-full sm:w-auto"
                     href="#innovations">
                     <span class="">Explore Anchal Model</span>
                     <i class="fa-solid fa-child ml-2 text-xs"></i>
@@ -863,20 +868,20 @@
                     <span class="">Watch Stories</span>
                   </a>
                 </div>
-                <div class="slide-stats pt-4 border-t border-slate-300 grid grid-cols-3 gap-3.5 max-w-lg">
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-slate-200 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-slate-900">3,200+</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-slate-600 mt-1">Active Crèches
+                <div class="slide-stats pt-4 border-t border-slate-300 grid grid-cols-3 gap-1.5 sm:gap-3.5 max-w-lg">
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-slate-200 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-slate-900">3,200+</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-slate-600 mt-1">Active Crèches
                     </div>
                   </div>
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-emerald-300 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-emerald-700">82%</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-emerald-800 mt-1">Drowning Cut
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-emerald-300 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-emerald-700">82%</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-emerald-800 mt-1">Drowning Cut
                     </div>
                   </div>
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-slate-200 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-slate-900">70,000+</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-slate-600 mt-1">Enrolled</div>
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-slate-200 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-slate-900">70,000+</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-slate-600 mt-1">Enrolled</div>
                   </div>
                 </div>
               </div>
@@ -903,7 +908,7 @@
           </div>
           <!-- Slide 6: Eye Health Research -->
           <div class="hero-slide transition-opacity duration-700 ease-in-out hidden" data-index="6" style="opacity: 0;">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center py-2">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center px-3 sm:px-6 py-4 sm:py-6">
               <div class="lg:col-span-6 space-y-5">
                 <h1
                   class="slide-title text-3xl sm:text-4xl lg:text-[40px] xl:text-[46px] font-black tracking-tight text-slate-900 leading-[1.38]">
@@ -914,8 +919,8 @@
                   Conducting national epidemiological surveys to eliminate avoidable blindness, establish refraction
                   centers, and deliver affordable community cataract care across rural divisions.
                 </p>
-                <div class="slide-ctas flex flex-wrap items-center gap-4 pt-1">
-                  <a class="btn-sheen inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-extrabold text-white bg-purple-700 hover:bg-purple-800 shadow-xl shadow-purple-700/30 hover:scale-105 transition-all"
+                <div class="slide-ctas flex flex-col sm:flex-row sm:items-center gap-3 pt-1">
+                  <a class="btn-sheen inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-extrabold text-white bg-purple-700 hover:bg-purple-800 shadow-xl shadow-purple-700/30 hover:scale-105 transition-all w-full sm:w-auto"
                     href="#our-focus">
                     <span class="">Vision Studies</span>
                     <i class="fa-solid fa-eye ml-2 text-xs"></i>
@@ -926,20 +931,20 @@
                     <span class="">Consult Findings</span>
                   </a>
                 </div>
-                <div class="slide-stats pt-4 border-t border-slate-300 grid grid-cols-3 gap-3.5 max-w-lg">
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-slate-200 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-slate-900">25,000+</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-slate-600 mt-1">Screenings
+                <div class="slide-stats pt-4 border-t border-slate-300 grid grid-cols-3 gap-1.5 sm:gap-3.5 max-w-lg">
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-slate-200 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-slate-900">25,000+</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-slate-600 mt-1">Screenings
                     </div>
                   </div>
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-purple-300 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-purple-700">64</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-purple-800 mt-1">Districts
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-purple-300 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-purple-700">64</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-purple-800 mt-1">Districts
                       Covered</div>
                   </div>
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-slate-200 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-slate-900">Primary</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-slate-600 mt-1">Care Protocols
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-slate-200 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-slate-900">Primary</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-slate-600 mt-1">Care Protocols
                     </div>
                   </div>
                 </div>
@@ -966,7 +971,7 @@
           </div>
           <!-- Slide 7: World Drowning Day 2026 -->
           <div class="hero-slide transition-opacity duration-700 ease-in-out hidden" data-index="7" style="opacity: 0;">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center py-2">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center px-3 sm:px-6 py-4 sm:py-6">
               <div class="lg:col-span-6 space-y-5">
                 <h1
                   class="slide-title text-3xl sm:text-4xl lg:text-[40px] xl:text-[46px] font-black tracking-tight text-slate-900 leading-[1.38]">
@@ -977,8 +982,8 @@
                   Mobilizing government stakeholders, WHO delegates, and regional coalitions to advance the United
                   Nations General Assembly resolution on global drowning prevention.
                 </p>
-                <div class="slide-ctas flex flex-wrap items-center gap-4 pt-1">
-                  <a class="btn-sheen inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-extrabold text-white bg-amber-600 hover:bg-amber-700 shadow-xl shadow-amber-600/30 hover:scale-105 transition-all"
+                <div class="slide-ctas flex flex-col sm:flex-row sm:items-center gap-3 pt-1">
+                  <a class="btn-sheen inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-extrabold text-white bg-amber-600 hover:bg-amber-700 shadow-xl shadow-amber-600/30 hover:scale-105 transition-all w-full sm:w-auto"
                     href="#media">
                     <span class="">Summit Declaration</span>
                     <i class="fa-solid fa-flag ml-2 text-xs"></i>
@@ -989,20 +994,20 @@
                     <span class="">Join The Movement</span>
                   </a>
                 </div>
-                <div class="slide-stats pt-4 border-t border-slate-300 grid grid-cols-3 gap-3.5 max-w-lg">
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-slate-200 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-slate-900">193</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-slate-600 mt-1">UN Member
+                <div class="slide-stats pt-4 border-t border-slate-300 grid grid-cols-3 gap-1.5 sm:gap-3.5 max-w-lg">
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-slate-200 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-slate-900">193</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-slate-600 mt-1">UN Member
                       States</div>
                   </div>
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-amber-300 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-amber-600">25 July</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-amber-800 mt-1">Annual
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-amber-300 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-amber-600">25 July</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-amber-800 mt-1">Annual
                       Observation</div>
                   </div>
-                  <div class="bg-white p-3.5 rounded-2xl border-2 border-slate-200 shadow-md text-center">
-                    <div class="text-2xl sm:text-3xl font-black text-slate-900">Zero</div>
-                    <div class="text-[11px] font-extrabold uppercase tracking-wider text-slate-600 mt-1">Preventable
+                  <div class="bg-white p-2 sm:p-3.5 rounded-2xl border-2 flex flex-col justify-center items-center min-w-0 border-slate-200 shadow-md text-center">
+                    <div class="text-xs sm:text-2xl lg:text-3xl font-black whitespace-nowrap whitespace-nowrap text-slate-900">Zero</div>
+                    <div class="text-[9px] sm:text-[11px] font-extrabold uppercase tracking-tight truncate w-full sm:whitespace-normal text-slate-600 mt-1">Preventable
                       Deaths</div>
                   </div>
                 </div>
