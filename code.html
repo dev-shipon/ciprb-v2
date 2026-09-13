@@ -448,19 +448,114 @@
         </div>
       </div>
     </div>
-    <!-- Mobile Drawer -->
-    <div
-      class="hidden xl:hidden border-t border-slate-200 bg-white px-5 pt-3 pb-6 space-y-2.5 text-base font-semibold text-slate-800 shadow-xl"
-      id="mobile-menu">
-      <a class="block px-3 py-2 rounded-xl text-brand-coral bg-orange-50 font-bold" href="#hero">Home</a>
-      <a class="block px-3 py-2 rounded-xl hover:bg-slate-50" href="#who-we-are">Who We Are</a>
-      <a class="block px-3 py-2 rounded-xl hover:bg-slate-50" href="#our-focus">Research &amp; Focus Areas</a>
-      <a class="block px-3 py-2 rounded-xl hover:bg-slate-50" href="#innovations">Our Projects &amp; Innovations</a>
-      <a class="block px-3 py-2 rounded-xl hover:bg-slate-50" href="#media">Media &amp; Field Updates</a>
-      <a class="block px-3 py-2 rounded-xl hover:bg-slate-50" href="#case-story">Fistula Case Story</a>
-      <a class="block px-3 py-2 rounded-xl hover:bg-slate-50" href="#partners-section">Our Partners</a>
-      <a class="block px-3 py-2 rounded-xl hover:bg-slate-50" href="#contact">Contact &amp; Support Us</a>
-    </div>
+        <!-- Off-Canvas Mobile Drawer Overlay & Slide Panel -->
+    <div id="mobile-drawer-overlay" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 transition-opacity duration-300 opacity-0 pointer-events-none"></div>
+
+    <aside id="mobile-drawer" class="fixed top-0 right-0 bottom-0 w-full max-w-sm bg-white z-50 shadow-2xl transition-transform duration-300 transform translate-x-full flex flex-col justify-between overflow-y-auto">
+      <div>
+        <!-- Drawer Header -->
+        <div class="flex items-center justify-between p-5 border-b border-slate-100">
+          <a href="#hero" class="flex items-center gap-2.5">
+            <img src="https://ciprb.org/storage/photos/shares/about%20ciprb/dpicon.png" alt="CIPRB Logo" class="h-9 w-auto object-contain" />
+            <span class="text-xl font-black text-brand-navyDeep tracking-tight">CIPRB</span>
+          </a>
+          <button id="mobile-drawer-close" type="button" aria-label="Close mobile menu" class="w-9 h-9 rounded-full bg-slate-100 hover:bg-red-50 text-slate-600 hover:text-red-500 flex items-center justify-center transition-colors">
+            <i class="fa-solid fa-xmark text-lg"></i>
+          </button>
+        </div>
+
+        <!-- Navigation Links List -->
+        <div class="px-5 py-3 space-y-1 divide-y divide-slate-100 text-sm font-semibold text-slate-800">
+          <a class="mobile-nav-link flex items-center justify-between py-3 px-3 rounded-xl hover:bg-slate-50 hover:text-brand-coral transition-colors" href="#hero">
+            <span>Home</span>
+            <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+          </a>
+          <a class="mobile-nav-link flex items-center justify-between py-3 px-3 rounded-xl hover:bg-slate-50 hover:text-brand-coral transition-colors" href="#who-we-are">
+            <span>Who We Are</span>
+            <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+          </a>
+          <a class="mobile-nav-link flex items-center justify-between py-3 px-3 rounded-xl hover:bg-slate-50 hover:text-brand-coral transition-colors" href="#our-focus">
+            <span>Research &amp; Focus Areas</span>
+            <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+          </a>
+          <a class="mobile-nav-link flex items-center justify-between py-3 px-3 rounded-xl hover:bg-slate-50 hover:text-brand-coral transition-colors" href="#innovations">
+            <span>Our Projects &amp; Innovations</span>
+            <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+          </a>
+          <a class="mobile-nav-link flex items-center justify-between py-3 px-3 rounded-xl hover:bg-slate-50 hover:text-brand-coral transition-colors" href="#media">
+            <span>Media &amp; Field Updates</span>
+            <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+          </a>
+          <a class="mobile-nav-link flex items-center justify-between py-3 px-3 rounded-xl hover:bg-slate-50 hover:text-brand-coral transition-colors" href="#case-story">
+            <span>Fistula Case Story</span>
+            <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+          </a>
+          <a class="mobile-nav-link flex items-center justify-between py-3 px-3 rounded-xl hover:bg-slate-50 hover:text-brand-coral transition-colors" href="#partners-section">
+            <span>Our Partners</span>
+            <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+          </a>
+          <a class="mobile-nav-link flex items-center justify-between py-3 px-3 rounded-xl hover:bg-slate-50 hover:text-brand-coral transition-colors" href="#contact">
+            <span>Contact &amp; Support Us</span>
+            <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+          </a>
+        </div>
+
+        <!-- Contact Info Section -->
+        <div class="px-6 py-4 border-t border-slate-100 space-y-3">
+          <h4 class="text-xs font-extrabold text-brand-navyDeep tracking-wider uppercase">Contact Info</h4>
+          <ul class="space-y-2.5 text-xs text-slate-600">
+            <li class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-full bg-blue-50 text-brand-navy flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-phone text-xs"></i>
+              </span>
+              <span class="font-medium">+880 2 48810903</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-full bg-blue-50 text-brand-navy flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-envelope text-xs"></i>
+              </span>
+              <span class="font-medium">info@ciprb.org</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="w-8 h-8 rounded-full bg-blue-50 text-brand-navy flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fa-solid fa-location-dot text-xs"></i>
+              </span>
+              <span class="leading-relaxed font-medium">House # 2-3, Road # 1, Block # F, Banani, Dhaka-1213, Bangladesh</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Follow Us Section -->
+        <div class="px-6 py-4 border-t border-slate-100 space-y-3">
+          <h4 class="text-xs font-extrabold text-brand-navyDeep tracking-wider uppercase">Follow Us</h4>
+          <div class="flex items-center gap-2">
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-xl border border-slate-200 bg-slate-50 hover:bg-brand-navy hover:text-white hover:border-brand-navy flex items-center justify-center text-slate-600 transition-all">
+              <i class="fa-brands fa-facebook-f text-xs"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter X" class="w-9 h-9 rounded-xl border border-slate-200 bg-slate-50 hover:bg-brand-navy hover:text-white hover:border-brand-navy flex items-center justify-center text-slate-600 transition-all">
+              <i class="fa-brands fa-x-twitter text-xs"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 rounded-xl border border-slate-200 bg-slate-50 hover:bg-brand-navy hover:text-white hover:border-brand-navy flex items-center justify-center text-slate-600 transition-all">
+              <i class="fa-brands fa-linkedin-in text-xs"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-xl border border-slate-200 bg-slate-50 hover:bg-brand-navy hover:text-white hover:border-brand-navy flex items-center justify-center text-slate-600 transition-all">
+              <i class="fa-brands fa-instagram text-xs"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube" class="w-9 h-9 rounded-xl border border-slate-200 bg-slate-50 hover:bg-brand-navy hover:text-white hover:border-brand-navy flex items-center justify-center text-slate-600 transition-all">
+              <i class="fa-brands fa-youtube text-xs"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drawer Footer CTA -->
+      <div class="p-5 border-t border-slate-100 bg-slate-50/60">
+        <a href="#contact" class="mobile-nav-link btn-sheen flex items-center justify-center w-full py-3 px-6 rounded-full text-xs sm:text-sm font-extrabold text-white bg-brand-coral hover:bg-brand-coralHover shadow-lg shadow-brand-coral/30 transition-all">
+          <span>Donate Now</span>
+          <i class="fa-solid fa-heart ml-2 text-xs"></i>
+        </a>
+      </div>
+    </aside>
   </nav>
   <!-- END: 2. Main Navigation Bar -->
   <main>
@@ -2493,14 +2588,37 @@
   <!-- END: 12. Full Rich Footer -->
   <!-- JavaScript for 60FPS Micro-Interactions, Mobile Drawer, and Observers -->
   <script>
-    // 1. Mobile Drawer Toggle
+    // 1. Off-Canvas Mobile Drawer Toggle
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (mobileMenuBtn && mobileMenu) {
-      mobileMenuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
+    const mobileDrawer = document.getElementById('mobile-drawer');
+    const mobileOverlay = document.getElementById('mobile-drawer-overlay');
+    const mobileDrawerClose = document.getElementById('mobile-drawer-close');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+    function openMobileDrawer() {
+      if (mobileDrawer && mobileOverlay) {
+        mobileOverlay.classList.remove('opacity-0', 'pointer-events-none');
+        mobileOverlay.classList.add('opacity-100', 'pointer-events-auto');
+        mobileDrawer.classList.remove('translate-x-full');
+        mobileDrawer.classList.add('translate-x-0');
+        document.body.style.overflow = 'hidden';
+      }
     }
+
+    function closeMobileDrawer() {
+      if (mobileDrawer && mobileOverlay) {
+        mobileOverlay.classList.remove('opacity-100', 'pointer-events-auto');
+        mobileOverlay.classList.add('opacity-0', 'pointer-events-none');
+        mobileDrawer.classList.remove('translate-x-0');
+        mobileDrawer.classList.add('translate-x-full');
+        document.body.style.overflow = '';
+      }
+    }
+
+    if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileDrawer);
+    if (mobileDrawerClose) mobileDrawerClose.addEventListener('click', closeMobileDrawer);
+    if (mobileOverlay) mobileOverlay.addEventListener('click', closeMobileDrawer);
+    mobileNavLinks.forEach(link => link.addEventListener('click', closeMobileDrawer));
 
     // 2. Reading Progress Indicator & Back to Top (60FPS Passive listener)
     const progressBar = document.getElementById('scroll-progress-bar');
