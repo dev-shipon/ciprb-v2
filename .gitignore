@@ -1,0 +1,13 @@
+# System & Editor Junk
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Environment & Secrets
+.env*
+
+# Logs & Temp
+*.log
+.tempmediaStorage/
+scratch/
